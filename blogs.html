@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & News | E-Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         SHARED NAVIGATION BAR
+    ========================================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logoe-learning.png" alt="E-Learning Logo" class="logo-pic">
+        </a>
+        <nav class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="about.html">About</a></li> <!-- Naya About Link -->
+                <li><a href="blogs.html">Blog</a></li>
+                
+                <!-- NOTE: Agar aap index.html mein hain toh Dashboard ka link yahan rakh sakte hain -->
+                <!-- <li><a href="dashboard.html" style="color: var(--accent-primary); font-weight: 700;">Dashboard</a></li> -->
+            </ul>
+            <a href="#" class="btn-signup" id="openAuthBtn">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Our Latest <span class="text-gradient">Insights & News</span></h1>
+            <p class="large-text">Discover tips, industry trends, and expert advice to help you learn, grow, and succeed in your career.</p>
+        </div>
+    </section>
+
+    <main class="blog-section">
+        
+        <div class="featured-post">
+            <div class="featured-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="AI in Education" class="featured-img">
+            </div>
+            <div class="featured-content">
+                <span class="blog-tag tag-blue">Technology</span>
+                <h2 class="featured-title">How Artificial Intelligence is Changing the Future of Online Learning</h2>
+                <div class="blog-meta">
+                    <span class="author">By Muhammad Zohaib</span>
+                    <span class="dot-separator">•</span>
+                    <span class="date">August 24, 2026</span>
+                </div>
+                <p class="featured-excerpt">Artificial Intelligence is no longer just a buzzword. Discover how smart algorithms and personalized learning paths are revolutionizing the way students acquire new skills today.</p>
+                <a href="#" class="btn-read-more trigger-modal">Read Full Article</a>
+                
+                <div class="full-article-text" style="display: none;">
+                    <p>Artificial Intelligence (AI) is rapidly transforming the educational landscape. From automated grading systems to intelligent tutoring setups, the technology is making learning more personalized and accessible.</p>
+                    <h3>The Rise of Personalized Learning Paths</h3>
+                    <p>Gone are the days of one-size-fits-all education. Modern e-learning platforms use machine learning algorithms to analyze a student's performance in real-time. If a student struggles with a specific topic, the AI automatically adjusts the curriculum, providing additional resources and exercises until the concept is mastered.</p>
+                    <h3>24/7 Assistance with AI Tutors</h3>
+                    <p>Chatbots and AI-driven tutors are now available around the clock. Whether it's 2 AM or mid-day, students can get instant answers to their questions, ensuring that the learning process is never paused.</p>
+                    <p>As we move further into 2026, we can expect AI to become an even more integral part of both traditional classrooms and online digital academies.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title">Recent Articles</h3>
+        <div class="blog-grid">
+            
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=500&q=80" alt="Web Design" class="blog-img">
+                <div class="blog-card-content">
+                    <span class="blog-tag tag-purple">Design</span>
+                    <h3 class="blog-title">Top 5 Web Design Trends to Watch in 2026</h3>
+                    <div class="blog-meta">
+                        <span class="date">August 20, 2026</span>
+                    </div>
+                    <p class="blog-excerpt">From glassmorphism to dark mode tech themes, learn what's dominating the UI/UX world right now.</p>
+                    <a href="#" class="blog-link trigger-modal">Read More ➔</a>
+                    
+                    <div class="full-article-text" style="display: none;">
+                        <p>The web design industry evolves incredibly fast. This year, we are seeing a massive shift towards immersive, user-centric designs that prioritize accessibility and aesthetics.</p>
+                        <ul>
+                            <li><strong>Dark Mode & Tech Themes:</strong> Reducing eye strain while providing a sleek, modern look.</li>
+                            <li><strong>Glassmorphism:</strong> Blurred, semi-transparent backgrounds that add depth.</li>
+                            <li><strong>Micro-Interactions:</strong> Small animations that provide immediate feedback to user actions.</li>
+                        </ul>
+                        <p>Staying updated with these trends is crucial for any frontend developer looking to build cutting-edge user interfaces.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80" alt="Career" class="blog-img">
+                <div class="blog-card-content">
+                    <span class="blog-tag tag-orange">Career</span>
+                    <h3 class="blog-title">How to Transition from Junior to Senior Developer</h3>
+                    <div class="blog-meta">
+                        <span class="date">August 15, 2026</span>
+                    </div>
+                    <p class="blog-excerpt">Actionable tips for frontend engineers to step up their game, improve architecture skills, and get promoted.</p>
+                    <a href="#" class="blog-link trigger-modal">Read More ➔</a>
+                    
+                    <div class="full-article-text" style="display: none;">
+                        <p>Moving from a Junior to a Senior role isn't just about writing more code; it's about writing better code, understanding system architecture, and mentoring others.</p>
+                        <h3>Focus on the Big Picture</h3>
+                        <p>Seniors understand how the entire system connects. They don't just fix bugs; they foresee potential scalability issues and design robust solutions.</p>
+                        <p>Start reviewing pull requests, participate in system design discussions, and don't be afraid to take ownership of large features.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=500&q=80" alt="Study" class="blog-img">
+                <div class="blog-card-content">
+                    <span class="blog-tag tag-green">Lifestyle</span>
+                    <h3 class="blog-title">The Pomodoro Technique: Maximizing Study Focus</h3>
+                    <div class="blog-meta">
+                        <span class="date">August 10, 2026</span>
+                    </div>
+                    <p class="blog-excerpt">Struggling to focus on long video lectures? This simple time management method can change everything.</p>
+                    <a href="#" class="blog-link trigger-modal">Read More ➔</a>
+                    
+                    <div class="full-article-text" style="display: none;">
+                        <p>The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks.</p>
+                        <p>By forcing yourself to take regular breaks, you prevent mental fatigue and maintain a high level of productivity throughout your study sessions.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=500&q=80" alt="React" class="blog-img">
+                <div class="blog-card-content">
+                    <span class="blog-tag tag-blue">Technology</span>
+                    <h3 class="blog-title">What's New in the Latest React Update?</h3>
+                    <div class="blog-meta">
+                        <span class="date">August 05, 2026</span>
+                    </div>
+                    <p class="blog-excerpt">A deep dive into the new hooks, performance improvements, and how to migrate your existing projects.</p>
+                    <a href="#" class="blog-link trigger-modal">Read More ➔</a>
+                    
+                    <div class="full-article-text" style="display: none;">
+                        <p>React continues to dominate the frontend ecosystem. The latest updates bring massive improvements to server-side rendering and state management.</p>
+                        <p>New concurrent features allow developers to prioritize UI updates, ensuring that the application remains responsive even during heavy data fetching operations.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=500&q=80" alt="Freelance" class="blog-img">
+                <div class="blog-card-content">
+                    <span class="blog-tag tag-red">Business</span>
+                    <h3 class="blog-title">Landing Your First Big Freelance Client</h3>
+                    <div class="blog-meta">
+                        <span class="date">July 28, 2026</span>
+                    </div>
+                    <p class="blog-excerpt">Step-by-step guide on writing proposals, pricing your services, and building a standout portfolio.</p>
+                    <a href="#" class="blog-link trigger-modal">Read More ➔</a>
+                    
+                    <div class="full-article-text" style="display: none;">
+                        <p>Starting as a freelancer can be daunting. The key to landing high-paying clients is not just having great technical skills, but presenting yourself as a professional problem solver.</p>
+                        <p>Always tailor your proposals to the specific needs of the client. Show them exactly how your skills will directly benefit their business or increase their revenue.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=500&q=80" alt="Mobile" class="blog-img">
+                <div class="blog-card-content">
+                    <span class="blog-tag tag-teal">Development</span>
+                    <h3 class="blog-title">Flutter vs React Native in 2026</h3>
+                    <div class="blog-meta">
+                        <span class="date">July 22, 2026</span>
+                    </div>
+                    <p class="blog-excerpt">Comparing performance, developer experience, and community support for cross-platform app development.</p>
+                    <a href="#" class="blog-link trigger-modal">Read More ➔</a>
+                    
+                    <div class="full-article-text" style="display: none;">
+                        <p>The battle between Flutter and React Native continues. While React Native boasts a massive community and easy transition for web developers, Flutter offers unparalleled performance and custom UI rendering.</p>
+                        <p>Ultimately, the choice depends on your team's existing skill set and the specific requirements of the mobile application you are building.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="pagination">
+            <button class="page-btn active-page">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">Next ➔</button>
+        </div>
+
+    </main>
+
+     <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="logoe-learning.png" alt="E-Learning Logo" class="footer-logo">
+                </a>
+                <p class="footer-text">Empowering students and professionals with high-quality multimedia learning solutions to advance their careers and skills.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🅵</a>
+                    <a href="" class="social-icon">🔗</a>
+                    <a href="#" class="social-icon">👾</a>
+                    <a href="#" class="social-icon">🖂</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Our Courses</a></li>
+                    <li><a href="blog.html">Latest Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h4 class="footer-heading">Subscribe Now</h4>
+                <p class="footer-text">Get the latest updates and course offers directly in your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">➔</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 E-Learning Platform. All rights reserved.</p>
+            <p class="developer-credit">Built with  by Muhammad Zohaib</p>
+        </div>
+    </footer>
+
+    <div class="blog-modal-overlay" id="articleModal">
+        <div class="blog-modal-content">
+            <button class="close-article-btn" id="closeArticleModal">&times;</button>
+            
+            <div class="article-modal-header">
+                <div id="modalTagContainer"></div>
+                <h2 id="modalTitle" class="modal-article-title"></h2>
+                <div id="modalMeta" class="blog-meta"></div>
+            </div>
+            
+            <img id="modalImage" src="" alt="Blog Cover" class="modal-article-img">
+            
+            <div id="modalBody" class="modal-article-body">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ==========================================
+            // DYNAMIC NAVBAR (CHECK LOGIN STATE)
+            // ==========================================
+            const authBtn = document.getElementById('openAuthBtn');
+            const sessionActive = localStorage.getItem('elearning_session');
+            const loggedInUser = localStorage.getItem('elearning_user');
+
+            if (sessionActive === 'active' && loggedInUser && authBtn) {
+                const userData = JSON.parse(loggedInUser);
+                
+                // Extract the user's first name
+                const firstName = userData.name.split(' ')[0]; 
+                
+                // Transform the Auth button into a Dashboard link
+                authBtn.innerText = `👤 (${firstName})`;
+                authBtn.href = 'dashboard.html';
+                
+                // Remove the ID to prevent the authentication modal from triggering
+                authBtn.removeAttribute('id'); 
+            }
+            const triggers = document.querySelectorAll('.trigger-modal');
+            const articleModal = document.getElementById('articleModal');
+            const closeBtn = document.getElementById('closeArticleModal');
+
+            // Elements inside the modal to update
+            const modalTitle = document.getElementById('modalTitle');
+            const modalImage = document.getElementById('modalImage');
+            const modalTagContainer = document.getElementById('modalTagContainer');
+            const modalMeta = document.getElementById('modalMeta');
+            const modalBody = document.getElementById('modalBody');
+
+            triggers.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    // Find the parent card of the clicked button
+                    const card = e.target.closest('.featured-post, .blog-card');
+                    
+                    // Extract data from the card
+                    const title = card.querySelector('.featured-title, .blog-title').innerText;
+                    const imgSrc = card.querySelector('.featured-img, .blog-img').src;
+                    const tagHTML = card.querySelector('.blog-tag').outerHTML;
+                    const metaHTML = card.querySelector('.blog-meta').innerHTML;
+                    const fullTextHTML = card.querySelector('.full-article-text').innerHTML;
+
+                    // Inject data into the modal
+                    modalTitle.innerText = title;
+                    modalImage.src = imgSrc;
+                    modalTagContainer.innerHTML = tagHTML;
+                    modalMeta.innerHTML = metaHTML;
+                    modalBody.innerHTML = fullTextHTML;
+
+                    // Show Modal and stop background scroll
+                    articleModal.classList.add('show-article');
+                    document.body.style.overflow = 'hidden'; 
+                });
+            });
+
+            // Close Modal Logic
+            const closeModal = () => {
+                articleModal.classList.remove('show-article');
+                document.body.style.overflow = 'auto'; // Restore background scroll
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+
+            // Close when clicking outside the modal content
+            window.addEventListener('click', (e) => {
+                if (e.target === articleModal) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

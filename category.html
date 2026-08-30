@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Categories | E-Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         SHARED NAVIGATION BAR
+    ========================================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logoe-learning.png" alt="E-Learning Logo" class="logo-pic">
+        </a>
+        <nav class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="about.html">About</a></li> <!-- Naya About Link -->
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                
+                <!-- NOTE: Agar aap index.html mein hain toh Dashboard ka link yahan rakh sakte hain -->
+                <!-- <li><a href="dashboard.html" style="color: var(--accent-primary); font-weight: 700;">Dashboard</a></li> -->
+            </ul>
+            <a href="#" class="btn-signup" id="openAuthBtn">Sign Up</a>
+        </nav>
+    </header>
+
+  <section class="page-header">
+        <div class="header-content">
+            <h1>Explore Top <span class="text-gradient">Categories</span></h1>
+            <p>Discover thousands of courses from top experts around the world. Find your niche and start learning today.</p>
+            
+            <div class="search-bar-cat">
+                <input type="text" id="searchInput" placeholder="Search for categories (e.g., Python, Music, Design)...">
+                <button class="btn-search" id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="all-categories-section">
+        
+        <div class="category-filters">
+            <button class="filter-btn active-filter" data-filter="all">All Categories</button>
+            <button class="filter-btn" data-filter="tech">Technology</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+        </div>
+
+        <div class="detailed-categories-grid" id="categoryGrid">
+            <!-- Displayed when category search yields no results -->
+<div id="noResultsMsg" style="display: none; text-align: center; width: 100%; padding: 3rem; color: var(--text-muted); font-size: 1.2rem; font-weight: 500; grid-column: 1 / -1;">
+    Oops! 😕 No categories found matching your search.
+</div>
+            
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="tech">
+                <div class="cat-header"><div class="cat-icon icon-blue">💻</div><span class="course-count">120+ Courses</span></div>
+                <h3>Web Development</h3>
+                <p>Master HTML, CSS, JavaScript, React, Node.js, and build modern web applications.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $19</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80" alt="Web Dev">
+                    <p>Start your journey to becoming a Full-Stack developer. In this comprehensive track, you will learn everything from basic frontend layouts to advanced backend architectures.</p>
+                    <h3>Included Modules:</h3>
+                    <ul>
+                        <li>Frontend Mastery (HTML5, CSS3, ES6+)</li>
+                        <li>Modern UI with React & Tailwind CSS</li>
+                        <li>Backend Development with Node.js & Express</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="design">
+                <div class="cat-header"><div class="cat-icon icon-purple">🎨</div><span class="course-count">85+ Courses</span></div>
+                <h3>UI/UX Design</h3>
+                <p>Learn user research, wireframing, prototyping, and design tools like Figma.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $15</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80" alt="UI UX">
+                    <p>Design digital experiences that users love. This category covers the psychology of design, accessibility, and high-fidelity prototyping using industry-standard tools.</p>
+                    <h3>Included Modules:</h3>
+                    <ul>
+                        <li>Foundations of User Experience (UX)</li>
+                        <li>Wireframing & Prototyping in Figma</li>
+                        <li>Building Design Systems</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="business">
+                <div class="cat-header"><div class="cat-icon icon-orange">📈</div><span class="course-count">90+ Courses</span></div>
+                <h3>Digital Marketing</h3>
+                <p>Grow businesses using SEO, Social Media Marketing, and Google Ads.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $12</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Marketing">
+                    <p>Learn how to drive traffic and convert leads. Digital Marketing is essential for any modern business to survive and thrive online.</p>
+                    <h3>Included Modules:</h3>
+                    <ul>
+                        <li>Search Engine Optimization (SEO) Masterclass</li>
+                        <li>Social Media Strategy & Content Planning</li>
+                        <li>PPC and Google Ads Campaigns</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="tech">
+                <div class="cat-header"><div class="cat-icon icon-green">📊</div><span class="course-count">65+ Courses</span></div>
+                <h3>Data Science</h3>
+                <p>Analyze data with Python, Pandas, Machine Learning, and visualizations.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $25</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Science">
+                    <p>Unlock the power of data. Learn how to process massive datasets, build predictive models, and visualize your findings using Python.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Python for Data Analysis</li><li>Machine Learning Algorithms</li><li>Data Visualization with Tableau</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="business">
+                <div class="cat-header"><div class="cat-icon icon-red">💼</div><span class="course-count">150+ Courses</span></div>
+                <h3>Business & Finance</h3>
+                <p>Develop leadership skills, understand accounting, and learn successful strategies.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $20</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Business">
+                    <p>From starting a startup to managing corporate finances, this category covers the A to Z of the business world.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Corporate Finance & Accounting</li><li>Leadership and Team Management</li><li>Entrepreneurship 101</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="lifestyle">
+                <div class="cat-header"><div class="cat-icon icon-teal">🧠</div><span class="course-count">40+ Courses</span></div>
+                <h3>Personal Development</h3>
+                <p>Improve productivity, master time management, and build confidence.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $10</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=800&q=80" alt="Personal Dev">
+                    <p>Invest in yourself. Learn techniques to overcome procrastination, communicate effectively, and build unshakeable confidence.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Time Management & Productivity</li><li>Public Speaking Mastery</li><li>Mindfulness and Stress Reduction</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="lifestyle">
+                <div class="cat-header"><div class="cat-icon icon-blue">📷</div><span class="course-count">55+ Courses</span></div>
+                <h3>Photography & Video</h3>
+                <p>Learn portrait photography, video editing with Premiere Pro, and drone shooting.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $18</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Camera">
+                    <p>Capture the world beautifully. This category teaches you camera settings, lighting, composition, and professional post-processing.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Photography Fundamentals (DSLR & Mirrorless)</li><li>Adobe Premiere Pro Video Editing</li><li>Cinematic Drone Videography</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="lifestyle">
+                <div class="cat-header"><div class="cat-icon icon-purple">🎸</div><span class="course-count">30+ Courses</span></div>
+                <h3>Music & Audio</h3>
+                <p>Master guitar, piano, vocal training, or learn music production in Ableton.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $14</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Music">
+                    <p>Unleash your inner musician. Whether you want to learn an instrument or produce electronic music, we have top experts to guide you.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Acoustic Guitar for Beginners</li><li>Music Production in Ableton Live</li><li>Vocal Training Basics</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="lifestyle">
+                <div class="cat-header"><div class="cat-icon icon-orange">💪</div><span class="course-count">45+ Courses</span></div>
+                <h3>Health & Fitness</h3>
+                <p>Yoga, meditation, nutrition planning, and strength training fundamentals.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $10</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Fitness">
+                    <p>Transform your body and mind. Get access to certified trainers and nutritionists who will help you achieve your fitness goals safely.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Home Workout & Strength Training</li><li>Nutrition and Diet Planning</li><li>Daily Yoga Routines</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="design">
+                <div class="cat-header"><div class="cat-icon icon-green">✏️</div><span class="course-count">70+ Courses</span></div>
+                <h3>Graphic Design</h3>
+                <p>Learn Photoshop, Illustrator, logo design, and branding basics.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $15</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Graphic Design">
+                    <p>Become a visual communicator. Learn the principles of color theory, typography, and how to create stunning artwork for brands.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Adobe Photoshop CC Masterclass</li><li>Vector Art with Illustrator</li><li>Brand Identity and Logo Design</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="lifestyle">
+                <div class="cat-header"><div class="cat-icon icon-red">🌐</div><span class="course-count">80+ Courses</span></div>
+                <h3>Language Learning</h3>
+                <p>Learn conversational English, Spanish, French, and Japanese quickly.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $12</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80" alt="Languages">
+                    <p>Break the communication barrier. Learn a new language with immersive audio lessons, vocabulary drills, and real-life conversations.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Conversational Spanish</li><li>Business English Fluency</li><li>Beginner Japanese (JLPT N5)</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="detail-cat-card trigger-cat-modal" data-category="tech">
+                <div class="cat-header"><div class="cat-icon icon-teal">📱</div><span class="course-count">110+ Courses</span></div>
+                <h3>Mobile App Dev</h3>
+                <p>Build native Android and iOS applications using Flutter, React Native, and Swift.</p>
+                <div class="cat-footer">
+                    <span class="cat-price">Starts at $22</span>
+                    <span class="explore-text">Explore ➔</span>
+                </div>
+                <div class="hidden-cat-data" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" alt="Mobile Dev">
+                    <p>Take over the App Store. Learn how to build fast, beautiful, and cross-platform mobile applications from scratch.</p>
+                    <h3>Included Modules:</h3>
+                    <ul><li>Flutter & Dart Bootcamp</li><li>iOS Development with Swift</li><li>React Native for Beginners</li></ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="logoe-learning.png" alt="E-Learning Logo" class="footer-logo">
+                </a>
+                <p class="footer-text">Empowering students and professionals with high-quality multimedia learning solutions to advance their careers and skills.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🅵</a>
+                    <a href="#" class="social-icon">🔗</a>
+                    <a href="#" class="social-icon">👾</a>
+                    <a href="#" class="social-icon">🖂</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Our Courses</a></li>
+                    <li><a href="blog.html">Latest Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h4 class="footer-heading">Subscribe Now</h4>
+                <p class="footer-text">Get the latest updates and course offers directly in your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">➔</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 E-Learning Platform. All rights reserved.</p>
+            <p class="developer-credit">Built with by Muhammad Zohaib</p>
+        </div>
+    </footer>
+
+    <div class="blog-modal-overlay" id="categoryModal">
+        <div class="blog-modal-content">
+            <button class="close-article-btn" id="closeCatModal">&times;</button>
+            
+            <div class="article-modal-header">
+                <h2 id="catModalTitle" class="modal-article-title"></h2>
+                <div id="catModalSubtitle" class="blog-meta" style="justify-content: center; font-size: 1.1rem; color: var(--accent-primary);"></div>
+            </div>
+            
+            <img id="catModalImage" src="" alt="Category Image" class="modal-article-img">
+            
+            <div id="catModalBody" class="modal-article-body">
+                </div>
+        </div>
+    </div>
+
+    <div class="pricing-modal-overlay" id="pricingModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closePricingModal">&times;</button>
+            <h2 class="modal-title">Choose Your Upgrade Plan</h2>
+            
+            <div class="pricing-cards">
+                <div class="plan-card">
+                    <h3>Basic</h3>
+                    <h4 class="plan-price">$19<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ Access to free courses</li>
+                        <li>✔️ Basic support</li>
+                        <li>❌ Offline downloads</li>
+                    </ul>
+                    <button class="btn-select-plan">Select Basic</button>
+                </div>
+                <div class="plan-card popular-plan">
+                    <div class="badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <h4 class="plan-price">$49<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ Access to all courses</li>
+                        <li>✔️ Standard support</li>
+                        <li>✔️ Offline downloads</li>
+                    </ul>
+                    <button class="btn-select-plan active-btn">Select Standard</button>
+                </div>
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <h4 class="plan-price">$99<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ All Standard features</li>
+                        <li>✔️ 1-on-1 Mentorship</li>
+                        <li>✔️ Certificate of Completion</li>
+                    </ul>
+                    <button class="btn-select-plan">Select Premium</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ==========================================
+            // DYNAMIC NAVBAR (CHECK LOGIN STATE)
+            // ==========================================
+            const authBtn = document.getElementById('openAuthBtn');
+            const sessionActive = localStorage.getItem('elearning_session');
+            const loggedInUser = localStorage.getItem('elearning_user');
+
+            if (sessionActive === 'active' && loggedInUser && authBtn) {
+                const userData = JSON.parse(loggedInUser);
+                
+                // Extract the user's first name
+                const firstName = userData.name.split(' ')[0]; 
+                
+                // Transform the Auth button into a Dashboard link
+                authBtn.innerText = `👤 (${firstName})`;
+                authBtn.href = 'dashboard.html';
+                
+                // Remove the ID to prevent the authentication modal from triggering
+                authBtn.removeAttribute('id'); 
+            }
+            
+            // --- 1. Category Search & Filter Logic ---
+            // ==========================================
+            // CATEGORY SEARCH BAR FUNCTIONALITY
+            // ==========================================
+            const searchInput = document.getElementById('searchInput');
+            const categoryCards = document.querySelectorAll('.detail-cat-card');
+            const noResultsMsg = document.getElementById('noResultsMsg');
+
+            if (searchInput) {
+                searchInput.addEventListener('keyup', () => {
+                    const query = searchInput.value.toLowerCase();
+                    let hasResults = false; // Flag to track if any matches are found
+
+                    categoryCards.forEach(card => {
+                        const title = card.querySelector('h3').innerText.toLowerCase();
+                        const desc = card.querySelector('p').innerText.toLowerCase();
+                        
+                        // Check if search query exists in title or description
+                        if (title.includes(query) || desc.includes(query)) {
+                            card.style.display = 'flex';
+                            hasResults = true; // Match found
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Toggle the "No Results" message based on the flag
+                    if (noResultsMsg) {
+                        if (hasResults) {
+                            noResultsMsg.style.display = 'none';
+                        } else {
+                            noResultsMsg.style.display = 'block';
+                        }
+                    }
+                });
+            }
+
+            // --- 2. Category Details Modal Logic ---
+            const triggers = document.querySelectorAll('.trigger-cat-modal');
+            const categoryModal = document.getElementById('categoryModal');
+            const closeCatBtn = document.getElementById('closeCatModal');
+            
+            const catModalTitle = document.getElementById('catModalTitle');
+            const catModalSubtitle = document.getElementById('catModalSubtitle');
+            const catModalImage = document.getElementById('catModalImage');
+            const catModalBody = document.getElementById('catModalBody');
+
+            triggers.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault(); 
+                    
+                    const card = e.target.closest('.detail-cat-card');
+                    const title = card.querySelector('h3').innerText;
+                    const courseCount = card.querySelector('.course-count').innerText;
+                    
+                    // Fetch hidden data
+                    const hiddenData = card.querySelector('.hidden-cat-data');
+                    const imgSrc = hiddenData.querySelector('img').src;
+                    
+                    // Extract HTML body (excluding the img tag)
+                    let bodyHTML = hiddenData.innerHTML;
+                    bodyHTML = bodyHTML.replace(/<img[^>]*>/, ''); // Remove image from body
+
+                    catModalTitle.innerText = title;
+                    catModalSubtitle.innerText = courseCount;
+                    catModalImage.src = imgSrc;
+                    catModalBody.innerHTML = bodyHTML;
+
+                    categoryModal.classList.add('show-article');
+                    document.body.style.overflow = 'hidden'; 
+                });
+            });
+
+            // Close Category Modal
+            const closeCategoryModal = () => {
+                categoryModal.classList.remove('show-article');
+                document.body.style.overflow = 'auto'; 
+            };
+            closeCatBtn.addEventListener('click', closeCategoryModal);
+
+            // --- 3. Pricing Modal Logic (Triggered from inside Category Modal) ---
+            const pricingModal = document.getElementById('pricingModal');
+            const closePricingBtn = document.getElementById('closePricingModal');
+
+            // Event Delegation: Listen for clicks on the dynamically injected "Upgrade" button
+            catModalBody.addEventListener('click', (e) => {
+                if(e.target.classList.contains('open-pricing-btn')) {
+                    // Close Category Modal First
+                    closeCategoryModal();
+                    // Open Pricing Modal
+                    setTimeout(() => {
+                        pricingModal.classList.add('show-modal');
+                    }, 300); // Small delay for smooth transition
+                }
+            });
+
+            // Close Pricing Modal
+            closePricingBtn.addEventListener('click', () => {
+                pricingModal.classList.remove('show-modal');
+            });
+
+            // --- Close Modals clicking outside ---
+            window.addEventListener('click', (e) => {
+                if (e.target === categoryModal) {
+                    closeCategoryModal();
+                }
+                if (e.target === pricingModal) {
+                    pricingModal.classList.remove('show-modal');
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

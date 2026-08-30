@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | E-Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body-bg">
+
+    <div class="dashboard-layout">
+        
+        <!-- =========================================
+             LEFT SIDEBAR
+        ========================================= -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="logoe-learning.png" alt="Logo" class="dash-logo">
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#">📊 Dashboard</a></li>
+                <li><a href="#">📚 My Courses</a></li>
+                <li><a href="#">📅 Schedule</a></li>
+                <li><a href="index.html">🏠 Back to Home<span class="badge">3</span></a></li>
+                <li><a href="#">⚙️ Settings</a></li>
+                <!-- Logout Button -->
+                <li><a href="#" id="logoutBtn" style="color: #EF4444;">🚪 Logout</a></li>
+            </ul>
+
+            <div class="sidebar-upgrade">
+                <h4>Go Premium</h4>
+                <p>Unlock all courses & features</p>
+                <button class="btn-dash-upgrade" id="upgradeBtn">Upgrade Now</button>
+            </div>
+        </aside>
+
+        <!-- =========================================
+             MAIN DASHBOARD CONTENT
+        ========================================= -->
+        <main class="dashboard-main">
+            
+            <!-- Top Header -->
+            <header class="dash-header">
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Search courses, mentors...">
+                </div>
+                
+                <div class="header-right">
+                    <button class="notif-btn">🔔<span class="dot"></span></button>
+                    <div class="user-profile">
+                        <img src="https://placehold.co/100x100/e0e0e0/555?text=USER" alt="Profile" class="profile-pic">
+                        <div class="user-info">
+                            <!-- Dynamic Profile Name Target -->
+                            <strong id="profileName">Student Name</strong>
+                            <span>Frontend Student</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content Area -->
+            <div class="dash-content">
+                
+                <!-- Welcome Banner -->
+                <div class="welcome-banner">
+                    <div class="banner-text">
+                        <!-- Dynamic Welcome Message Target -->
+                        <h2 id="welcomeName">Welcome back, Student! 👋</h2>
+                        <p>You've learned 80% of your goal this week! Keep it up and improve your progress.</p>
+                        <a href="cousre.html"><button class="btn-continue">Continue Learning</button></a>
+                    </div>
+                    <div class="banner-illustration">
+                        <!-- <img src="" alt="Student Illustration" style="mix-blend-mode: multiply;"> -->
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="dash-stats-grid">
+                    <div class="dash-stat-card">
+                        <div class="icon-box bg-purple">📚</div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Courses Enrolled</p>
+                        </div>
+                    </div>
+                    <div class="dash-stat-card">
+                        <div class="icon-box bg-blue">✅</div>
+                        <div class="stat-info">
+                            <h3>4</h3>
+                            <p>Courses Completed</p>
+                        </div>
+                    </div>
+                    <div class="dash-stat-card">
+                        <div class="icon-box bg-yellow">🏆</div>
+                        <div class="stat-info">
+                            <h3>2</h3>
+                            <p>Certificates Earned</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Active Courses Section -->
+                <div class="active-courses-section">
+                    <div class="section-title-row">
+                        <h3>My Active Courses</h3>
+                        <a href="#">View All</a>
+                    </div>
+                    
+                    <div class="active-courses-grid">
+                        <!-- Progress Card 1 -->
+                        <div class="progress-card">
+                            <img src="uiux desginer.jpg" alt="UI/UX" class="prog-img">
+                            <div class="prog-details">
+                                <h4>Mastering UI/UX Design</h4>
+                                <p>5/15 Lessons Completed</p>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-fill" style="width: 35%;"></div>
+                                </div>
+                                <span class="progress-text">35%</span>
+                            </div>
+                        </div>
+
+                        <!-- Progress Card 2 -->
+                        <div class="progress-card">
+                            <img src="web development.jpg" alt="Web Dev" class="prog-img">
+                            <div class="prog-details">
+                                <h4>Full-Stack Web Bootcamp</h4>
+                                <p>24/30 Lessons Completed</p>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                                <span class="progress-text">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- =========================================
+         DASHBOARD PROTECTION & LOCAL STORAGE LOGIC
+    ========================================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. DASHBOARD PROTECTION
+            // Verify if the user has an active session
+            const sessionStatus = localStorage.getItem('elearning_session');
+            
+            if (sessionStatus !== 'active') {
+                // Redirect immediately to the home page if unauthorized
+                window.location.href = 'index.html';
+            }
+
+            // 2. FETCH AND DISPLAY USER DATA
+            // Retrieve stored user details to populate the UI dynamically
+            const storedUserString = localStorage.getItem('elearning_user');
+            if (storedUserString) {
+                const storedUser = JSON.parse(storedUserString);
+                
+                const profileName = document.getElementById('profileName');
+                const welcomeName = document.getElementById('welcomeName');
+                
+                if(profileName) profileName.innerText = storedUser.name;
+                if(welcomeName) welcomeName.innerText = `Welcome back, ${storedUser.name}! 👋`;
+            }
+
+            // 3. LOGOUT FUNCTIONALITY
+            const logoutBtn = document.getElementById('logoutBtn');
+            if(logoutBtn) {
+                logoutBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Clear the active session from Local Storage
+                    localStorage.removeItem('elearning_session');
+                    // Redirect the user back to the home page
+                    window.location.href = 'index.html';
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
