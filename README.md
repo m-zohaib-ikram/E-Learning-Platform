@@ -7,12 +7,12 @@
 
 2. User Dashboard Preview
 <br>
-<img src="desktopicture.png" alt="Dashboard Preview" width="800">
+<img src="desktoppicture.png" alt="Dashboard Preview" width="800">
 <br><br>
 
 3. Blog Preview
 <br>
-<img src="blogpicture.png" alt="Blog Preview" width="800">
+<img src="bolgpicture.png" alt="Blog Preview" width="800">
 <br><br>
 
 Welcome to the E-Learning Platform, a modern, highly interactive, and fully responsive frontend architecture designed for digital education and skill-building. This project focuses on delivering a seamless and premium User Experience (UX) through robust client-side logic, data persistence, and smooth UI interactions. Developed as Task 2 during the Frontend Developer Internship at Hex Softwares Pvt. Ltd.
