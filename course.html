@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses | E-Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         SHARED NAVIGATION BAR
+    ========================================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logoe-learning.png" alt="E-Learning Logo" class="logo-pic">
+        </a>
+        <nav class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="about.html">About</a></li> <!-- Naya About Link -->
+                <li><a href="blogs.html">Blog</a></li>
+                
+                <!-- NOTE: Agar aap index.html mein hain toh Dashboard ka link yahan rakh sakte hain -->
+                <!-- <li><a href="dashboard.html" style="color: var(--accent-primary); font-weight: 700;">Dashboard</a></li> -->
+            </ul>
+            <a href="#" class="btn-signup" id="openAuthBtn">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="page-header course-header-large">
+        <div class="header-content">
+            <h1>Unlock Your <span class="text-gradient">Potential</span></h1>
+            <p class="large-text">Explore our comprehensive library of courses taught by industry experts. Find the perfect course to advance your career today.</p>
+        </div>
+    </section>
+
+    <main class="all-courses-section">
+        
+        <div class="course-filters-bar">
+            <div class="filter-group">
+                <select class="filter-dropdown">
+                    <option>All Categories</option>
+                    <option>Web Development</option>
+                    <option>UI/UX Design</option>
+                    <option>Digital Marketing</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>All Levels</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+            </div>
+            <div class="sort-group">
+                <select class="filter-dropdown sort-dropdown">
+                    <option>Sort By: Most Popular</option>
+                    <option>Sort By: Newest</option>
+                    <option>Sort By: Price (Low to High)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="courses-grid large-fonts-grid">
+            
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="phyton wal.jpg" alt="Python" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">45 Lessons</span>
+                    <h3 class="course-title">The Complete Python Pro Bootcamp</h3>
+                    <div class="course-price"><span class="new-price">$120</span> <span class="old-price">$200</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">4.9 (2k+ Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 15k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Be able to program in Python professionally</li>
+                        <li>Master the Python 3 programming language</li>
+                        <li>Build GUIs and Desktop applications with Python</li>
+                        <li>Create a portfolio of 100 Python projects</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="UI UX" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">30 Lessons</span>
+                    <h3 class="course-title">Advanced UI/UX Design with Figma</h3>
+                    <div class="course-price"><span class="new-price">$95</span> <span class="old-price">$150</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">4.8 (1.5k Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 8k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Take your design skills to the next level. Learn advanced prototyping, design systems, and user testing methodologies using Figma.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Create high-fidelity prototypes and animations</li>
+                        <li>Build and manage scalable Design Systems</li>
+                        <li>Conduct effective user research and testing</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80" alt="React" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">60 Lessons</span>
+                    <h3 class="course-title">React JS - From Beginner to Expert</h3>
+                    <div class="course-price"><span class="new-price">$140</span> <span class="old-price">$250</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">5.0 (3k+ Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 22k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Dive deep into React. Learn Hooks, Redux, Context API, and Next.js to build lightning-fast web applications.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Build powerful, fast, user-friendly and reactive web apps</li>
+                        <li>Understand how React actually works behind the scenes</li>
+                        <li>State management using Redux and Context API</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Marketing" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">25 Lessons</span>
+                    <h3 class="course-title">Digital Marketing Masterclass 2026</h3>
+                    <div class="course-price"><span class="new-price">$85</span> <span class="old-price">$120</span></div>
+                    <div class="course-rating"><span class="stars">★★★★☆</span> <span class="rating-text">4.7 (900 Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 5k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Grow any business online from scratch. Cover SEO, YouTube Marketing, Facebook Ads, Google Ads, and much more.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Grow a business online from scratch</li>
+                        <li>Make money as an affiliate marketer</li>
+                        <li>Land a highly-paid job in Digital Marketing</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=600&q=80" alt="Machine Learning" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">55 Lessons</span>
+                    <h3 class="course-title">Machine Learning A-Z: AI & Data Science</h3>
+                    <div class="course-price"><span class="new-price">$160</span> <span class="old-price">$299</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">4.9 (4k+ Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 30k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Master Machine Learning on Python & R</li>
+                        <li>Make accurate predictions and powerful analysis</li>
+                        <li>Build an army of powerful Machine Learning models</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80" alt="Photography" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">20 Lessons</span>
+                    <h3 class="course-title">Professional Photography for Beginners</h3>
+                    <div class="course-price"><span class="new-price">$60</span> <span class="old-price">$100</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">4.8 (1.2k Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 6k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Understand your camera and take better photos. This course will teach you everything from manual mode to composition and lighting.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>How to shoot in manual mode</li>
+                        <li>Master composition and lighting techniques</li>
+                        <li>Post-processing in Adobe Lightroom</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="pagination">
+            <button class="page-btn active-page">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">Next ➔</button>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="logoe-learning.png" alt="E-Learning Logo" class="footer-logo">
+                </a>
+                <p class="footer-text">Empowering students and professionals with high-quality multimedia learning solutions to advance their careers and skills.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🅵</a>
+                    <a href="#" class="social-icon">🔗</a>
+                    <a href="#" class="social-icon">👾</a>
+                    <a href="#" class="social-icon">🖂</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Our Courses</a></li>
+                    <li><a href="blog.html">Latest Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col">
+                <h4 class="footer-heading">Subscribe Now</h4>
+                <p class="footer-text">Get the latest updates and course offers directly in your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">➔</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 E-Learning Platform. All rights reserved.</p>
+            <p class="developer-credit">Built with  by Muhammad Zohaib</p>
+        </div>
+    </footer>
+
+    <div class="blog-modal-overlay" id="courseModal">
+        <div class="blog-modal-content">
+            <button class="close-article-btn" id="closeCourseModal">&times;</button>
+            
+            <div class="article-modal-header">
+                <h2 id="courseModalTitle" class="modal-article-title"></h2>
+                
+                <div id="courseModalMeta" class="blog-meta" style="justify-content: center; font-size: 1.2rem; color: var(--accent-primary); gap: 20px; flex-wrap: wrap; margin-bottom: 2rem;">
+                    </div>
+            </div>
+            
+            <img id="courseModalImage" src="" alt="Course Image" class="modal-article-img">
+            
+            <div id="courseModalBody" class="modal-article-body">
+                </div>
+        </div>
+    </div>
+
+    <div class="pricing-modal-overlay" id="pricingModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closePricingModal">&times;</button>
+            <h2 class="modal-title">Choose Your Upgrade Plan</h2>
+            
+            <div class="pricing-cards">
+                <div class="plan-card">
+                    <h3>Basic</h3>
+                    <h4 class="plan-price">$19<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ Access to free courses</li>
+                        <li>✔️ Basic support</li>
+                        <li>❌ Offline downloads</li>
+                    </ul>
+                    <button class="btn-select-plan">Select Basic</button>
+                </div>
+                <div class="plan-card popular-plan">
+                    <div class="badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <h4 class="plan-price">$49<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ Access to all courses</li>
+                        <li>✔️ Standard support</li>
+                        <li>✔️ Offline downloads</li>
+                    </ul>
+                    <button class="btn-select-plan active-btn">Select Standard</button>
+                </div>
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <h4 class="plan-price">$99<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ All Standard features</li>
+                        <li>✔️ 1-on-1 Mentorship</li>
+                        <li>✔️ Certificate of Completion</li>
+                    </ul>
+                    <button class="btn-select-plan">Select Premium</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ==========================================
+            // DYNAMIC NAVBAR (CHECK LOGIN STATE)
+            // ==========================================
+            const authBtn = document.getElementById('openAuthBtn');
+            const sessionActive = localStorage.getItem('elearning_session');
+            const loggedInUser = localStorage.getItem('elearning_user');
+
+            if (sessionActive === 'active' && loggedInUser && authBtn) {
+                const userData = JSON.parse(loggedInUser);
+                
+                // Extract the user's first name
+                const firstName = userData.name.split(' ')[0]; 
+                
+                // Transform the Auth button into a Dashboard link
+                authBtn.innerText = `👤 (${firstName})`;
+                authBtn.href = 'dashboard.html';
+                
+                // Remove the ID to prevent the authentication modal from triggering
+                authBtn.removeAttribute('id'); 
+            }
+            
+            // 1. Course Detail Modal Logic
+            const courseCards = document.querySelectorAll('.trigger-course-modal');
+            const courseModal = document.getElementById('courseModal');
+            const closeCourseBtn = document.getElementById('closeCourseModal');
+            
+            const courseModalTitle = document.getElementById('courseModalTitle');
+            const courseModalMeta = document.getElementById('courseModalMeta');
+            const courseModalImage = document.getElementById('courseModalImage');
+            const courseModalBody = document.getElementById('courseModalBody');
+
+            courseCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    // Agar koi filter dropdown par click kar raha hai toh rokein nahi
+                    if(e.target.tagName.toLowerCase() === 'select') return;
+                    e.preventDefault(); 
+                    
+                    const title = card.querySelector('.course-title').innerText;
+                    const ratingHtml = card.querySelector('.course-rating').innerHTML;
+                    const priceHtml = card.querySelector('.course-price').innerHTML;
+                    const imgSrc = card.querySelector('img').src;
+                    const hiddenBody = card.querySelector('.hidden-course-data').innerHTML;
+
+                    courseModalTitle.innerText = title;
+                    
+                    // Combine Rating and Price nicely
+                    courseModalMeta.innerHTML = `
+                        <div style="display:flex; align-items:center; gap: 10px;">${ratingHtml}</div>
+                        <span class="dot-separator">•</span>
+                        <div style="display:flex; align-items:center; gap: 10px;">${priceHtml}</div>
+                    `;
+                    
+                    courseModalImage.src = imgSrc;
+                    courseModalBody.innerHTML = hiddenBody;
+
+                    courseModal.classList.add('show-article');
+                    document.body.style.overflow = 'hidden'; 
+                });
+            });
+
+            // Close Course Modal
+            const closeCourseModalFunc = () => {
+                courseModal.classList.remove('show-article');
+                document.body.style.overflow = 'auto'; 
+            };
+            closeCourseBtn.addEventListener('click', closeCourseModalFunc);
+
+            // 2. Pricing Modal Logic (Triggered from inside Course Modal)
+            const pricingModal = document.getElementById('pricingModal');
+            const closePricingBtn = document.getElementById('closePricingModal');
+
+            // Event Delegation: Listen for clicks on the "Upgrade" button injected into the body
+            courseModalBody.addEventListener('click', (e) => {
+                if(e.target.classList.contains('open-pricing-btn')) {
+                    // Pehle Course Modal band karo
+                    closeCourseModalFunc();
+                    // Thore se delay ke baad Pricing Modal kholo (Smooth animation)
+                    setTimeout(() => {
+                        pricingModal.classList.add('show-modal');
+                        document.body.style.overflow = 'hidden'; // Keep body fixed
+                    }, 300); 
+                }
+            });
+
+            // Close Pricing Modal
+            closePricingBtn.addEventListener('click', () => {
+                pricingModal.classList.remove('show-modal');
+                document.body.style.overflow = 'auto';
+            });
+
+            // Close Modals when clicking outside the content box
+            window.addEventListener('click', (e) => {
+                if (e.target === courseModal) {
+                    closeCourseModalFunc();
+                }
+                if (e.target === pricingModal) {
+                    pricingModal.classList.remove('show-modal');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

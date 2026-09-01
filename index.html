@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         NAVIGATION BAR
+    ========================================= -->
+   <!-- =========================================
+         SHARED NAVIGATION BAR
+    ========================================= -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logoe-learning.png" alt="E-Learning Logo" class="logo-pic">
+        </a>
+        <nav class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Category</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="about.html">About</a></li> <!-- Naya About Link -->
+                <li><a href="blogs.html">Blog</a></li>
+                
+                <!-- NOTE: Agar aap index.html mein hain toh Dashboard ka link yahan rakh sakte hain -->
+                <li><a href="dashboard.html" style="color: var(--accent-primary); font-weight: 700;">Dashboard</a></li>
+            </ul>
+            <a href="#" class="btn-signup" id="openAuthBtn">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================= -->
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Investing in <br> <span class="highlight">Knowledge</span> and <br> <span class="highlight">Your Future</span></h1>
+            <p>Our e-learning programs have been developed to be a vehicle of delivering multimedia learning solutions for your business.</p>
+            
+            <div class="hero-actions">
+                <a href="about.html" class="btn-contact">Contact</a>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h2>50+</h2>
+                        <p>Career Courses</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>210+</h2>
+                        <p>Our Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <div class="hero-circle"></div>
+                <img src="student.image.jpg" alt="Student" class="hero-student-img" style="mix-blend-mode: multiply; border-radius: 50%; object-fit: cover;">
+
+                <div class="floating-card card-tr">
+                    <div class="card-icon bg-blue">📊</div>
+                    <div class="card-text">
+                        <strong>Learning Chart</strong>
+                    </div>
+                </div>
+
+                <div class="floating-card card-bl">
+                    <div class="card-icon bg-purple">🎓</div>
+                    <div class="card-text">
+                        <strong>175k</strong>
+                        <span>Assisted Students</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- =========================================
+         CATEGORIES SECTION
+    ========================================= -->
+    <section class="categories">
+        <div class="categories-header">
+            <h2>Browse Top Essential <br> <span class="highlight-orange">Career Courses</span></h2>
+        </div>
+
+        <div class="categories-container">
+            <a href="category.html" class="category-card card-pink">
+                <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+                <div class="card-content"><h3>UI/UX<br>Design</h3><div class="card-line"></div></div>
+            </a>
+            <a href="category.html" class="category-card card-purple">
+                <div class="card-icon text-icon">&lt;/&gt;</div>
+                <div class="card-content"><h3>Web<br>Development</h3><div class="card-line"></div></div>
+            </a>
+            <a href="category.html" class="category-card card-blue">
+                <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 19 2 12 11 5 11 19"></polygon><path d="M22 12A10 10 0 0 1 12 22V2a10 10 0 0 1 10 10z"></path></svg></div>
+                <div class="card-content"><h3>Digital<br>Marketing</h3><div class="card-line"></div></div>
+            </a>
+            <a href="category.html" class="category-card card-yellow">
+                <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></div>
+                <div class="card-content"><h3>Practical<br>Learning</h3><div class="card-line"></div></div>
+            </a>
+            <div class="browse-all-wrapper">
+                <a href="category.html" class="btn-browse-all"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                <span class="browse-text">Browse All</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         ABOUT US SECTION
+    ========================================= -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <div class="purple-backdrop"></div>
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Student studying" class="about-img">
+            </div>
+            <div class="about-content">
+                <span class="about-subtitle">ABOUT US</span>
+                <h2 class="about-title">We Provide Great <br> <span class="text-orange">E-Learning Platform</span></h2>
+                <h4 class="about-tagline">Creative & Proffesional Digital Agency!</h4>
+                <p class="about-text">Donec interdum hendrerit est, eu vehicula orci maximus vel. Suspendisse potenti. Etiam dignissim, massa non blandit varius.</p>
+                <a href="#" class="btn-read-more">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FEATURED COURSES SECTION (Clickable Cards)
+    ========================================= -->
+    <section class="courses-section">
+        <div class="courses-header">
+            <h2>You Can Learn Anything, <br> Explore <span class="text-orange">Featured Courses</span></h2>
+            <p>Click on any course below to view its details and upgrade options.</p>
+        </div>
+
+        <div class="courses-grid">
+            
+            <!-- Course 1 -->
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="phyton wal.jpg" alt="Python" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">45 Lessons</span>
+                    <h3 class="course-title">The Complete Python Pro Bootcamp</h3>
+                    <div class="course-price"><span class="new-price">$120</span> <span class="old-price">$200</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">4.9 (2k+ Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 15k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <!-- HIDDEN DATA FOR MODAL -->
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Be able to program in Python professionally</li>
+                        <li>Master the Python 3 programming language</li>
+                        <li>Build GUIs and Desktop applications with Python</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Course 2 -->
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="UI UX" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">30 Lessons</span>
+                    <h3 class="course-title">Advanced UI/UX Design with Figma</h3>
+                    <div class="course-price"><span class="new-price">$95</span> <span class="old-price">$150</span></div>
+                    <div class="course-rating"><span class="stars">★★★★★</span> <span class="rating-text">4.8 (1.5k Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 8k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <!-- HIDDEN DATA FOR MODAL -->
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Take your design skills to the next level. Learn advanced prototyping, design systems, and user testing methodologies using Figma.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Create high-fidelity prototypes and animations</li>
+                        <li>Build and manage scalable Design Systems</li>
+                        <li>Conduct effective user research and testing</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Course 3 -->
+            <article class="course-card trigger-course-modal" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Marketing" class="course-img">
+                <div class="course-info">
+                    <span class="lesson-tag">25 Lessons</span>
+                    <h3 class="course-title">Digital Marketing Masterclass 2026</h3>
+                    <div class="course-price"><span class="new-price">$85</span> <span class="old-price">$120</span></div>
+                    <div class="course-rating"><span class="stars">★★★★☆</span> <span class="rating-text">4.7 (900 Reviews)</span></div>
+                    <div class="course-footer">
+                        <div class="students">👨‍🎓 5k Students</div>
+                        <span class="btn-arrow">➔</span>
+                    </div>
+                </div>
+                <!-- HIDDEN DATA FOR MODAL -->
+                <div class="hidden-course-data" style="display: none;">
+                    <p>Grow any business online from scratch. Cover SEO, YouTube Marketing, Facebook Ads, Google Ads, and much more.</p>
+                    <h3>What you'll learn:</h3>
+                    <ul>
+                        <li>Grow a business online from scratch</li>
+                        <li>Make money as an affiliate marketer</li>
+                        <li>Land a highly-paid job in Digital Marketing</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button class="btn-upgrade open-pricing-btn">Upgrade to Unlock Full Course</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="view-all-wrapper">
+            <a href="course.html" class="btn-view-all">View All Courses</a>
+        </div>
+    </section>
+
+    <!-- =========================================
+         CTA BANNER
+    ========================================= -->
+    <section class="cta-section">
+        <div class="cta-banner">
+            <div class="cta-content">
+                <h2>Ready To Get Started?</h2>
+                <p>Join thousands of students and transform your career today.</p>
+            </div>
+            <button class="btn-upgrade" id="upgradeBtn">UPGRADE</button>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER SECTION
+    ========================================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Logo & About -->
+            <div class="footer-col about-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="logoe-learning.png" alt="E-Learning Logo" class="footer-logo">
+                </a>
+                <p class="footer-text">
+                    Empowering students and professionals with high-quality multimedia learning solutions to advance their careers and skills.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">🅵</a>
+                    <a href="#" class="social-icon">🔗‍️</a>
+                    <a href="#" class="social-icon">👾</a>
+                    <a href="#" class="social-icon">🖂</a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Our Courses</a></li>
+                    <li><a href="blog.html">Latest Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Support -->
+            <div class="footer-col">
+                <h4 class="footer-heading">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="footer-col newsletter-col">
+                <h4 class="footer-heading">Subscribe Now</h4>
+                <p class="footer-text">Get the latest updates and course offers directly in your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">➔</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 E-Learning Platform. All rights reserved.</p>
+            <p class="developer-credit">Built with   by Muhammad Zohaib</p>
+        </div>
+    </footer>
+
+    <!-- =========================================
+         ALL MODALS (AUTH, COURSE DETAIL, PRICING)
+    ========================================= -->
+    
+    <!-- 1. AUTHENTICATION MODAL -->
+    <div class="auth-modal-overlay" id="authModal">
+        <div class="auth-modal-content">
+            <button class="close-auth-btn" id="closeAuthModal">&times;</button>
+            <div class="auth-toggle-box">
+                <button class="auth-toggle-btn active-toggle" id="showLoginBtn">Log In</button>
+                <button class="auth-toggle-btn" id="showSignupBtn">Sign Up</button>
+            </div>
+            <form class="auth-form active-form" id="loginForm">
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-auth-submit">Log In</button>
+            </form>
+            <form class="auth-form" id="signupForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn-auth-submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 2. COURSE DETAIL MODAL (Fixed for Home Page) -->
+    <div class="blog-modal-overlay" id="courseModal">
+        <div class="blog-modal-content">
+            <button class="close-article-btn" id="closeCourseModal">&times;</button>
+            
+            <div class="article-modal-header">
+                <h2 id="courseModalTitle" class="modal-article-title"></h2>
+                <div id="courseModalMeta" class="blog-meta" style="justify-content: center; font-size: 1.2rem; color: var(--accent-primary); gap: 20px; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <!-- Rating and Price injected here -->
+                </div>
+            </div>
+            
+            <img id="courseModalImage" src="" alt="Course Image" class="modal-article-img">
+            
+            <div id="courseModalBody" class="modal-article-body">
+                <!-- Details & Upgrade Button injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. PRICING PLANS MODAL -->
+    <div class="pricing-modal-overlay" id="pricingModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closePricingModal">&times;</button>
+            <h2 class="modal-title">Choose Your Upgrade Plan</h2>
+            <div class="pricing-cards">
+                <div class="plan-card">
+                    <h3>Basic</h3>
+                    <h4 class="plan-price">$19<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ Access to free courses</li>
+                        <li>✔️ Basic support</li>
+                        <li>❌ Offline downloads</li>
+                    </ul>
+                    <button class="btn-select-plan">Select Basic</button>
+                </div>
+                <div class="plan-card popular-plan">
+                    <div class="badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <h4 class="plan-price">$49<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ Access to all courses</li>
+                        <li>✔️ Standard support</li>
+                        <li>✔️ Offline downloads</li>
+                    </ul>
+                    <button class="btn-select-plan active-btn">Select Standard</button>
+                </div>
+                <div class="plan-card">
+                    <h3>Premium</h3>
+                    <h4 class="plan-price">$99<span>/mo</span></h4>
+                    <ul class="plan-features">
+                        <li>✔️ All Standard features</li>
+                        <li>✔️ 1-on-1 Mentorship</li>
+                        <li>✔️ Certificate of Completion</li>
+                    </ul>
+                    <button class="btn-select-plan">Select Premium</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         ALL JAVASCRIPT LOGIC
+    ========================================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ==========================================
+            // DYNAMIC NAVBAR (CHECK LOGIN STATE)
+            // ==========================================
+            const authBtn = document.getElementById('openAuthBtn');
+            const sessionActive = localStorage.getItem('elearning_session');
+            const loggedInUser = localStorage.getItem('elearning_user');
+
+            if (sessionActive === 'active' && loggedInUser && authBtn) {
+                const userData = JSON.parse(loggedInUser);
+                
+                // Extract the user's first name (e.g., "Muhammad" from "Muhammad Zohaib")
+                const firstName = userData.name.split(' ')[0]; 
+                
+                // Transform the Auth button into a Dashboard link
+                authBtn.innerText = `👤 (${firstName})`;
+                authBtn.href = 'dashboard.html';
+                
+                // Remove the ID to prevent the authentication modal from triggering
+                authBtn.removeAttribute('id'); 
+            }
+            
+            // 1. AUTH MODAL & LOCAL STORAGE LOGIC
+            const authModal = document.getElementById('authModal');
+            const openAuthBtn = document.getElementById('openAuthBtn');
+            const closeAuthModal = document.getElementById('closeAuthModal');
+            const showLoginBtn = document.getElementById('showLoginBtn');
+            const showSignupBtn = document.getElementById('showSignupBtn');
+            const loginForm = document.getElementById('loginForm');
+            const signupForm = document.getElementById('signupForm');
+
+            if(openAuthBtn) {
+                openAuthBtn.addEventListener('click', (e) => {
+                    e.preventDefault(); 
+                    authModal.classList.add('show-auth');
+                });
+            }
+            if(closeAuthModal) {
+                closeAuthModal.addEventListener('click', () => authModal.classList.remove('show-auth'));
+            }
+
+            if(showLoginBtn && showSignupBtn) {
+                showLoginBtn.addEventListener('click', () => {
+                    showLoginBtn.classList.add('active-toggle'); showSignupBtn.classList.remove('active-toggle');
+                    loginForm.classList.add('active-form'); signupForm.classList.remove('active-form');
+                });
+                showSignupBtn.addEventListener('click', () => {
+                    showSignupBtn.classList.add('active-toggle'); showLoginBtn.classList.remove('active-toggle');
+                    signupForm.classList.add('active-form'); loginForm.classList.remove('active-form');
+                });
+            }
+
+            // Signup Logic
+            if (signupForm) {
+                signupForm.addEventListener('submit', (e) => {
+                    e.preventDefault(); 
+                    const inputs = signupForm.querySelectorAll('input');
+                    const user = { name: inputs[0].value, email: inputs[1].value, password: inputs[2].value };
+                    localStorage.setItem('elearning_user', JSON.stringify(user));
+                    alert('Account Created Successfully! Please Log In.');
+                    signupForm.reset();
+                    showLoginBtn.click(); 
+                });
+            }
+
+            // Login Logic
+            if (loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault(); 
+                    const inputs = loginForm.querySelectorAll('input');
+                    const email = inputs[0].value;
+                    const password = inputs[1].value;
+                    const storedUserString = localStorage.getItem('elearning_user');
+                    
+                    if (storedUserString) {
+                        const storedUser = JSON.parse(storedUserString);
+                        if (storedUser.email === email && storedUser.password === password) {
+                            localStorage.setItem('elearning_session', 'active');
+                            window.location.href = 'dashboard.html'; 
+                        } else {
+                            alert('Incorrect Email or Password!');
+                        }
+                    } else {
+                        alert('No account found. Please Sign Up first!');
+                    }
+                });
+            }
+
+            // 2. COURSE DETAIL MODAL LOGIC (Fixed)
+            const courseCards = document.querySelectorAll('.trigger-course-modal');
+            const courseModal = document.getElementById('courseModal');
+            const closeCourseBtn = document.getElementById('closeCourseModal');
+            const courseModalTitle = document.getElementById('courseModalTitle');
+            const courseModalMeta = document.getElementById('courseModalMeta');
+            const courseModalImage = document.getElementById('courseModalImage');
+            const courseModalBody = document.getElementById('courseModalBody');
+
+            if(courseCards.length > 0) {
+                courseCards.forEach(card => {
+                    card.addEventListener('click', (e) => {
+                        e.preventDefault(); 
+                        
+                        // Elements ko safely select karna
+                        const titleEl = card.querySelector('.course-title');
+                        const ratingEl = card.querySelector('.course-rating');
+                        const priceEl = card.querySelector('.course-price');
+                        const imgEl = card.querySelector('.course-img');
+                        const hiddenBodyEl = card.querySelector('.hidden-course-data');
+
+                        // Data inject karna
+                        if(titleEl) courseModalTitle.innerText = titleEl.innerText;
+                        
+                        let metaHtmlString = '';
+                        if(ratingEl) metaHtmlString += `<div style="display:flex; align-items:center; gap: 10px;">${ratingEl.innerHTML}</div>`;
+                        if(ratingEl && priceEl) metaHtmlString += `<span class="dot-separator">•</span>`;
+                        if(priceEl) metaHtmlString += `<div style="display:flex; align-items:center; gap: 10px;">${priceEl.innerHTML}</div>`;
+                        
+                        courseModalMeta.innerHTML = metaHtmlString;
+                        if(imgEl) courseModalImage.src = imgEl.src;
+                        if(hiddenBodyEl) courseModalBody.innerHTML = hiddenBodyEl.innerHTML;
+
+                        // Modal show karna
+                        courseModal.classList.add('show-article');
+                        document.body.style.overflow = 'hidden'; 
+                    });
+                });
+            }
+
+            const closeCourseModalFunc = () => {
+                if(courseModal) {
+                    courseModal.classList.remove('show-article');
+                    document.body.style.overflow = 'auto'; 
+                }
+            };
+            if(closeCourseBtn) closeCourseBtn.addEventListener('click', closeCourseModalFunc);
+
+            // 3. PRICING MODAL LOGIC
+            const pricingModal = document.getElementById('pricingModal');
+            const closePricingBtn = document.getElementById('closePricingModal');
+            const upgradeBtn = document.getElementById('upgradeBtn');
+
+            // Click from Banner
+            if (upgradeBtn) {
+                upgradeBtn.addEventListener('click', () => {
+                    pricingModal.classList.add('show-modal');
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+
+            // Click from inside Course Modal
+            if(courseModalBody) {
+                courseModalBody.addEventListener('click', (e) => {
+                    if(e.target.classList.contains('open-pricing-btn')) {
+                        closeCourseModalFunc();
+                        setTimeout(() => {
+                            pricingModal.classList.add('show-modal');
+                            document.body.style.overflow = 'hidden'; 
+                        }, 300); 
+                    }
+                });
+            }
+
+            if(closePricingBtn) {
+                closePricingBtn.addEventListener('click', () => {
+                    pricingModal.classList.remove('show-modal');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+
+            // Close modals when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === authModal) { authModal.classList.remove('show-auth'); }
+                if (e.target === courseModal) { closeCourseModalFunc(); }
+                if (e.target === pricingModal) { 
+                    pricingModal.classList.remove('show-modal'); 
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
